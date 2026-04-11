@@ -1,0 +1,246 @@
+.footer {
+  background: #1a1f26;
+  color: #ffffff;
+  padding-top: 80px;
+  font-family: var(--font-jakarta-sans), sans-serif;
+}
+
+.footerContainer {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footerTopCta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 80px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.ctaLeftBlue {
+  background: #0099FF;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ctaRightDark {
+  background: #252b33;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ctaIconBox {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.btnFooterWhite {
+  background: transparent;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: 1.5px solid #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: var(--font-quicksand), sans-serif;
+  transition: all 0.3s ease;
+}
+
+.btnFooterWhite:hover {
+  background: #ffffff;
+  color: #0099FF;
+}
+
+.ctaPhoneInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ctaLbl {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.ctaPhoneNum {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0099FF;
+  text-decoration: none;
+  font-family: var(--font-quicksand), sans-serif;
+}
+
+.footerMainGrid {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1.25fr;
+  gap: 50px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  align-items: flex-start;
+}
+
+.footerColInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoItem {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.infoIcon {
+  color: #0099FF;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.footerList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+
+.footerList a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footerList a:hover {
+  color: #0099FF;
+}
+
+.footerColTitle {
+  font-size: 15px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  font-family: var(--font-quicksand), sans-serif;
+}
+
+.footerBrandWrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footerLogo {
+  object-fit: contain;
+}
+
+.footerBottomBar {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 24px;
+}
+
+.bottomLinks a {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+.bottomLinks a:hover {
+  color: #0099FF;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer {
+    padding-top: 40px;
+  }
+
+  .footerTopCta {
+    grid-template-columns: 1fr;
+    border-radius: 0;
+    margin-bottom: 40px;
+  }
+  
+  .footerMainGrid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .infoItem, .footerBrandWrap {
+    justify-content: center;
+  }
+  
+  .footerBottomBar {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .footerContainer {
+    padding: 0 20px;
+  }
+
+  .ctaLeftBlue, .ctaRightDark {
+    padding: 30px 20px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .ctaIconBox {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ctaPhoneNum {
+    font-size: 18px;
+  }
+
+  .footerBottomBar {
+    padding: 20px 0 40px;
+  }
+
+  .bottomLinks {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
