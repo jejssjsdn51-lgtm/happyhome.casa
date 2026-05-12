@@ -24,7 +24,7 @@ const Hero = () => {
       <header className={styles.header}>
         <div className={styles.logoContainer}>
           <Image 
-            src="https://www.happyhome.casa/happyhomeie.png" 
+            src="/happyhomeie.png" 
             alt="Happy Home Logo" 
             width={100}
             height={100}
@@ -54,7 +54,7 @@ const Hero = () => {
         <div className={styles.heroLeft}>
           <div className={styles.badgeLogoContainer}>
             <Image 
-              src="https://www.happyhome.casa/happyhomelogo.png" 
+              src="/happyhomelogo.png" 
               alt="Happy Home Main Logo" 
               width={400}
               height={120}
