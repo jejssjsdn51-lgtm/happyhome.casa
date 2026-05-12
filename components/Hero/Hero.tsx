@@ -11,7 +11,7 @@ const Hero = () => {
       {/* Dynamic Background */}
       <div className={styles.heroBackground}>
         <Image
-          src="/hero-bg.png"
+          src="/hero-bg.jpg"
           alt="Modern House Background"
           fill
           priority
