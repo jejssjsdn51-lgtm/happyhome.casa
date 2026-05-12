@@ -104,10 +104,25 @@
 .infoItem {
   display: flex;
   gap: 12px;
-  align-items: center;
+  align-items: flex-start;
   font-size: 14px;
   color: #94a3b8;
   font-weight: 500;
+}
+
+.infoItem p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.infoItem a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.infoItem a:hover {
+  color: #0099FF;
 }
 
 .infoIcon {
@@ -233,6 +248,10 @@
 
   .ctaPhoneNum {
     font-size: 18px;
+  }
+
+  .infoItem {
+    text-align: left;
   }
 
   .footerBottomBar {

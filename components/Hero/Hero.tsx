@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import Script from 'next/script';
 import styles from './Hero.module.css';
 
@@ -9,25 +8,15 @@ const Hero = () => {
   return (
     <section className={styles.heroSection}>
       {/* Dynamic Background */}
-      <div className={styles.heroBackground}>
-        <Image
-          src="/hero.jpg"
-          alt="Modern House Background"
-          fill
-          priority
-          style={{ objectFit: 'cover' }}
-        />
-      </div>
+      <div className={styles.heroBackground} />
       <div className={styles.heroOverlay} />
 
       {/* Modern Header */}
       <header className={styles.header}>
         <div className={styles.logoContainer}>
-          <Image 
-            src="/happyhomeie.png" 
-            alt="Happy Home Logo" 
-            width={100}
-            height={100}
+          <img
+            src="/happyhomeie.png"
+            alt="Happy Home Logo"
             className={styles.logo}
           />
 
@@ -53,11 +42,9 @@ const Hero = () => {
       <div className={styles.heroContent}>
         <div className={styles.heroLeft}>
           <div className={styles.badgeLogoContainer}>
-            <Image 
-              src="/happyhomelogo.png" 
-              alt="Happy Home Main Logo" 
-              width={400}
-              height={120}
+            <img
+              src="/happyhomelogo.png"
+              alt="Happy Home Main Logo"
               className={styles.badgeLogo}
             />
           </div>
